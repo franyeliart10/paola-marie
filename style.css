@@ -231,37 +231,37 @@ a {
 
 /* Música */
 .bienvenida .contenido-seccion {
-  bottom: 35%;
+  bottom: 28%;
 }
 
 /* Calendario */
 .fecha .contenido-seccion {
-  bottom: 9%;
+  bottom: 7%;
 }
 
 /* Cuenta regresiva */
 .cuenta .contenido-seccion {
-  bottom: 45%;
+  bottom: 25%;
 }
 
 /* Ubicación */
 .ubicacion .contenido-seccion {
-  bottom: 25%;
+  bottom: 20%;
 }
 
 /* Dress code */
 .dresscode .contenido-seccion {
-  bottom: 55%;
+  bottom: 23%;
 }
 
 /* Regalos */
 .regalos .contenido-seccion {
-  bottom: 45%;
+  bottom: 35%;
 }
 
 /* RSVP */
 .rsvp .contenido-seccion {
-  bottom: 45%;
+  bottom: 25%;
 }
 
 
