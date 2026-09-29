@@ -241,7 +241,7 @@ a {
 
 /* Cuenta regresiva */
 .cuenta .contenido-seccion {
-  bottom: 25%;
+  bottom: 20%;
 }
 
 /* Ubicación */
@@ -251,17 +251,17 @@ a {
 
 /* Dress code */
 .dresscode .contenido-seccion {
-  bottom: 23%;
+  bottom: 26%;
 }
 
 /* Regalos */
 .regalos .contenido-seccion {
-  bottom: 35%;
+  bottom: 30%;
 }
 
 /* RSVP */
 .rsvp .contenido-seccion {
-  bottom: 25%;
+  bottom: 15%;
 }
 
 
