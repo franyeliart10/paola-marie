@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Baby Shower Paola Marie</title>
+
+  <meta name="theme-color" content="#F6ADC1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: "Joshico";
+      src: url("fonts/Joshico.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PORTADA -->
+  <section id="portada" class="portada">
+
+    <img
+      src="images/portada-referencia.PNG"
+      alt="Baby Shower Paola Marie"
+      class="portada-imagen"
+    >
+
+    <div class="portada-overlay"></div>
+
+    <button id="abrirInvitacion" class="boton-abrir">
+      ABRIR INVITACIÓN
+    </button>
+
+  </section>
+
+
+  <!-- TRANSICIÓN -->
+  <div id="transicion" class="transicion"></div>
+
+
+  <!-- INVITACIÓN -->
+  <main id="invitacion" class="invitacion">
+
+
+    <!-- BIENVENIDA -->
+    <section class="seccion seccion-fondo bienvenida">
+
+      <img
+        src="images/fondo-bienvenida.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <div class="reproductor-integrado">
+
+          <button
+            id="botonMusica"
+            class="boton-musica"
+            type="button"
+            aria-label="Activar música"
+          >
+            <span class="disco">
+              <span class="centro-disco">▶</span>
+            </span>
+          </button>
+
+          <button
+            id="textoMusica"
+            class="texto-musica"
+            type="button"
+          >
+            TOCA PARA ESCUCHAR
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FECHA -->
+    <section class="seccion seccion-fondo fecha">
+
+      <img
+        src="images/fondo-fecha.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <button
+          id="calendarioBtn"
+          class="boton-linea"
+          type="button"
+        >
+          <span class="icono-calendario">♡</span>
+          AGREGAR AL CALENDARIO
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="seccion seccion-fondo cuenta">
+
+      <img
+        src="images/fondo-cuenta.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <div class="contador">
+
+          <button class="contador-item" type="button" data-unidad="Días">
+            <span id="dias">0</span>
+            <small>DÍAS</small>
+          </button>
+
+          <button class="contador-item" type="button" data-unidad="Horas">
+            <span id="horas">0</span>
+            <small>HORAS</small>
+          </button>
+
+          <button class="contador-item" type="button" data-unidad="Minutos">
+            <span id="minutos">0</span>
+            <small>MINUTOS</small>
+          </button>
+
+          <button class="contador-item" type="button" data-unidad="Segundos">
+            <span id="segundos">0</span>
+            <small>SEGUNDOS</small>
+          </button>
+
+        </div>
+
+        <p id="mensajeContador" class="mensaje-contador">
+          Cada segundo nos acerca a Paola Marie.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- UBICACIÓN -->
+    <section class="seccion seccion-fondo ubicacion">
+
+      <img
+        src="images/fondo-ubicacion.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <a
+          href="https://maps.app.goo.gl/KDKvMhsrYHBvixNn8?g_st=ic"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="boton-rojo boton-ubicacion"
+        >
+          VER UBICACIÓN
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- DRESS CODE -->
+    <section class="seccion seccion-fondo dresscode">
+
+      <img
+        src="images/fondo-dresscode.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <div class="colores-dress">
+
+          <button class="color-opcion" data-color="rojo">
+    <span class="color-circulo color-rojo"></span>
+    ROJO
+</button>
+
+<button class="color-opcion" data-color="blanco">
+    <span class="color-circulo color-blanco"></span>
+    BLANCO
+</button>
+
+<button class="color-opcion" data-color="rosa">
+    <span class="color-circulo color-rosa"></span>
+    ROSA
+</button>
+
+        </div>
+
+        <p id="mensajeColor" class="mensaje-color">
+          Toca un color
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- REGALOS -->
+    <section class="seccion seccion-fondo regalos">
+
+      <img
+        src="images/fondo-regalos.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <div class="regalos-lista">
+
+          <div class="regalo-item">
+
+            <span class="regalo-icono">♡</span>
+
+            <div>
+              <strong>Pampers</strong>
+              <small>Del número 2 en adelante</small>
+            </div>
+
+          </div>
+
+
+          <div class="regalo-item">
+
+            <span class="regalo-icono">♡</span>
+
+            <div>
+              <strong>Wipes</strong>
+              <small>Sin alcohol</small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RSVP -->
+    <section class="seccion seccion-fondo rsvp">
+
+      <img
+        src="images/fondo-rsvp.png"
+        alt=""
+        class="fondo-seccion"
+      >
+
+      <div class="contenido-seccion">
+
+        <div class="rsvp-fecha-limite">
+
+          <span>CONFIRMAR ANTES DEL</span>
+
+          <strong>
+            JUEVES 15 DE OCTUBRE
+          </strong>
+
+        </div>
+
+
+        <div class="rsvp-botones">
+
+          <a
+            id="confirmarBtn"
+            class="rsvp-btn rsvp-si"
+            href="#"
+          >
+            SÍ, ALLÍ ESTARÉ
+          </a>
+
+          <a
+            id="noAsistirBtn"
+            class="rsvp-btn rsvp-no"
+            href="#"
+          >
+            NO PODRÉ ASISTIR
+          </a>
+
+        </div>
+
+
+        <div class="fresas-rsvp">
+
+          <button
+            class="grafico-fresa rsvp-fresa fresa-izquierda"
+            type="button"
+            aria-label="Decoración"
+          >
+            🍓
+          </button>
+
+          <button
+            class="grafico-fresa rsvp-fresa fresa-derecha"
+            type="button"
+            aria-label="Decoración"
+          >
+            🍓
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <p class="creado">
+        Invitación digital creada por FRANYELI A.R.T
+      </p>
+
+      <p class="contacto">
+        franyeliart10@gmail.com · VE +58 412-9000510
+      </p>
+
+      <p class="copyright">
+        © 2026 · Todos los derechos reservados
+      </p>
+
+    </footer>
+
+  </main>
+
+
+  <!-- MÚSICA -->
+  <audio
+    id="musica"
+    preload="auto"
+    loop
+  >
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
