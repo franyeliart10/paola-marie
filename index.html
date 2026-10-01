@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     @font-face {
@@ -27,7 +30,10 @@
 
 <body>
 
-  <!-- PORTADA -->
+  <!-- =====================================================
+       PORTADA
+  ====================================================== -->
+
   <section id="portada" class="portada">
 
     <img
@@ -38,7 +44,11 @@
 
     <div class="portada-overlay"></div>
 
-    <button id="abrirInvitacion" class="boton-abrir">
+    <button
+      id="abrirInvitacion"
+      class="boton-abrir"
+      type="button"
+    >
       ABRIR INVITACIÓN
     </button>
 
@@ -46,14 +56,21 @@
 
 
   <!-- TRANSICIÓN -->
+
   <div id="transicion" class="transicion"></div>
 
 
-  <!-- INVITACIÓN -->
+  <!-- =====================================================
+       INVITACIÓN
+  ====================================================== -->
+
   <main id="invitacion" class="invitacion">
 
 
-    <!-- BIENVENIDA -->
+    <!-- ===================================================
+         BIENVENIDA
+    ==================================================== -->
+
     <section class="seccion seccion-fondo bienvenida">
 
       <img
@@ -92,7 +109,10 @@
     </section>
 
 
-    <!-- FECHA -->
+    <!-- ===================================================
+         FECHA
+    ==================================================== -->
+
     <section class="seccion seccion-fondo fecha">
 
       <img
@@ -116,8 +136,11 @@
 
     </section>
 
-   
-    <!-- UBICACIÓN -->
+
+    <!-- ===================================================
+         UBICACIÓN
+    ==================================================== -->
+
     <section class="seccion seccion-fondo ubicacion">
 
       <img
@@ -142,7 +165,10 @@
     </section>
 
 
-    <!-- DRESS CODE -->
+    <!-- ===================================================
+         DRESS CODE
+    ==================================================== -->
+
     <section class="seccion seccion-fondo dresscode">
 
       <img
@@ -155,22 +181,37 @@
 
         <div class="colores-dress">
 
-          <button class="color-opcion" data-color="rojo">
-    <span class="color-circulo color-rojo"></span>
-    ROJO
-</button>
+          <button
+            class="color-opcion"
+            type="button"
+            data-color="rojo"
+          >
+            <span class="color-circulo color-rojo"></span>
+            ROJO
+          </button>
 
-<button class="color-opcion" data-color="blanco">
-    <span class="color-circulo color-blanco"></span>
-    BLANCO
-</button>
 
-<button class="color-opcion" data-color="rosa">
-    <span class="color-circulo color-rosa"></span>
-    ROSA
-</button>
+          <button
+            class="color-opcion"
+            type="button"
+            data-color="blanco"
+          >
+            <span class="color-circulo color-blanco"></span>
+            BLANCO
+          </button>
+
+
+          <button
+            class="color-opcion"
+            type="button"
+            data-color="rosa"
+          >
+            <span class="color-circulo color-rosa"></span>
+            ROSA
+          </button>
 
         </div>
+
 
         <p id="mensajeColor" class="mensaje-color">
           Toca un color
@@ -181,7 +222,10 @@
     </section>
 
 
-    <!-- REGALOS -->
+    <!-- ===================================================
+         REGALOS
+    ==================================================== -->
+
     <section class="seccion seccion-fondo regalos">
 
       <img
@@ -224,7 +268,10 @@
     </section>
 
 
-    <!-- RSVP -->
+    <!-- ===================================================
+         RSVP
+    ==================================================== -->
+
     <section class="seccion seccion-fondo rsvp">
 
       <img
@@ -256,6 +303,7 @@
             SÍ, ALLÍ ESTARÉ
           </a>
 
+
           <a
             id="noAsistirBtn"
             class="rsvp-btn rsvp-no"
@@ -266,15 +314,15 @@
 
         </div>
 
-
-              </div>
-
       </div>
 
     </section>
 
 
-     <!-- CUENTA REGRESIVA -->
+    <!-- ===================================================
+         CUENTA REGRESIVA
+    ==================================================== -->
+
     <section class="seccion seccion-fondo cuenta">
 
       <img
@@ -287,32 +335,66 @@
 
         <div class="contador">
 
-          <button class="contador-item" type="button" data-unidad="Días">
+          <button
+            class="contador-item"
+            type="button"
+            data-unidad="Días"
+          >
             <span id="dias">0</span>
             <small>DÍAS</small>
           </button>
 
-          <button class="contador-item" type="button" data-unidad="Horas">
+
+          <button
+            class="contador-item"
+            type="button"
+            data-unidad="Horas"
+          >
             <span id="horas">0</span>
             <small>HORAS</small>
           </button>
 
-          <button class="contador-item" type="button" data-unidad="Minutos">
+
+          <button
+            class="contador-item"
+            type="button"
+            data-unidad="Minutos"
+          >
             <span id="minutos">0</span>
             <small>MINUTOS</small>
           </button>
 
-          <button class="contador-item" type="button" data-unidad="Segundos">
+
+          <button
+            class="contador-item"
+            type="button"
+            data-unidad="Segundos"
+          >
             <span id="segundos">0</span>
             <small>SEGUNDOS</small>
           </button>
+
+        </div>
+
+
+        <!-- Este elemento faltaba y hacía que el JS se detuviera -->
+
+        <p
+          id="mensajeContador"
+          class="mensaje-contador"
+        >
+          Cada segundo nos acerca a Paola Marie.
+        </p>
 
       </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ===================================================
+         FOOTER
+    ==================================================== -->
+
     <footer class="footer">
 
       <p class="creado">
@@ -332,15 +414,23 @@
   </main>
 
 
-  <!-- MÚSICA -->
+  <!-- =====================================================
+       MÚSICA
+  ====================================================== -->
+
   <audio
     id="musica"
     preload="auto"
     loop
   >
-    <source src="audio/musica.mp3" type="audio/mpeg">
+    <source
+      src="audio/musica.mp3"
+      type="audio/mpeg"
+    >
   </audio>
 
+
+  <!-- JAVASCRIPT -->
 
   <script src="script.js"></script>
 
