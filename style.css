@@ -355,7 +355,7 @@ a {
 
   color: var(--rojo);
 
-  font-size: 7px;
+  font-size: 15px;
   letter-spacing: .16em;
 
   cursor: pointer;
@@ -605,7 +605,7 @@ a {
 
   color: var(--rojo);
 
-  font-size: 8px;
+  font-size: 15px;
   letter-spacing: .10em;
 }
 
@@ -715,7 +715,7 @@ a {
 }
 
 .rsvp-fecha-limite strong {
-  font-family: "Joshico", "Cinzel", serif;
+  font-family: "Cinzel", serif;
   font-size: 15px;
   letter-spacing: .08em;
 }
